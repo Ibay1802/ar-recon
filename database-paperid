@@ -1,0 +1,12 @@
+# Simple Database payments paperid
+
+Create database dummy_paperID
+
+# -- Table to store payments from Paper.ID
+CREATE TABLE payments_paperid (
+    id_paper_payment VARCHAR(50) PRIMARY KEY,
+    nomor_invoice VARCHAR(50) NOT NULL,
+    tanggal DATE NOT NULL,
+    jumlah DECIMAL(15, 2) NOT NULL,
+    id_student VARCHAR(50)
+);
