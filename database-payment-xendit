@@ -1,0 +1,11 @@
+# simple Database payments xendit
+
+Create Database dummy_xendit
+# Table to store payments from Xendit
+CREATE TABLE payments_xendit (
+    id_xendit_payment VARCHAR(50) PRIMARY KEY,
+    nomor_invoice VARCHAR(50) NOT NULL,
+    tanggal DATE NOT NULL,
+    jumlah DECIMAL(15, 2) NOT NULL,
+    id_student VARCHAR(50)
+);
