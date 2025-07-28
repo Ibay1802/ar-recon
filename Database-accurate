@@ -1,0 +1,44 @@
+# Create Database in this case i use dummy_accurate
+
+# Create Table for student data
+CREATE TABLE students (
+    id_student VARCHAR(50) PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    total_tagihan DECIMAL(15, 2),
+    tanggal_update TIMESTAMP
+);
+----
+
+# Create Table for piutang_tagihan (the table is for Account receivable and invoice data)
+CREATE TABLE piutang_tagihan (
+    id SERIAL PRIMARY KEY,
+    nomor_invoice VARCHAR(50) UNIQUE NOT NULL,
+    id_student VARCHAR(50) NOT NULL,
+    tanggal DATE NOT NULL,
+    total DECIMAL(15, 2) NOT NULL,
+    status VARCHAR(20) DEFAULT 'Belum Lunas',
+    jumlah_pembayaran NUMERIC,
+    tanggal_update TIMESTAMP,
+    CONSTRAINT fk_student FOREIGN KEY (id_student) REFERENCES students (id_student) ON DELETE CASCADE
+);
+
+----
+
+# Create Table penerimaan_penjualan (for record payments recieve)
+CREATE TABLE penerimaan_penjualan (
+    id SERIAL PRIMARY KEY,
+    nomor_penerimaan VARCHAR(50) UNIQUE NOT NULL,
+    nomor_invoice VARCHAR(50),
+    id_student VARCHAR(50) NOT NULL,
+    tanggal DATE NOT NULL,
+    metode_pembayaran VARCHAR(50) NOT NULL,
+    jumlah DECIMAL(15, 2) NOT NULL,
+    status VARCHAR(50),
+    tanggal_update TIMESTAMP,
+    CONSTRAINT fk_student FOREIGN KEY (id_student) REFERENCES students (id_student) ON DELETE CASCADE
+);
+
+----
+
+This databases is for databases dummy_accurate, you can edit it but when you edit the database please concern your python code match the databases
