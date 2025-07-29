@@ -168,18 +168,19 @@ DATABASES = {
 
 ## Usage Example
 
-1. Upload CSV files via the Tkinter GUI:
-   
-![Tkinter GUI Screenshot](Readme/images/UI_first_page.png)
-
-3. Run the payment integration process:
-Run the integration process to sync payments and update accounts receivable:
-
+1. run the app.py
 ```bash
 python recon.py
 ```
+![Tkinter GUI Screenshot](Readme/images/UI_first_page.png)
 
-3. Launch the Streamlit Dashboard
+2. Upload CSV files via the Tkinter GUI:
+click the "import csv" to upload the CSV file to database.
+
+3. Run the payment integration process:
+click the "payment integration process" to sync payments and update accounts receivable
+
+4. Launch the Streamlit Dashboard
 
 Visualize reports and analytics with:
 Click "Launch Streamlit Dashboard" Menu
