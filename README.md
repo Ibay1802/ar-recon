@@ -139,7 +139,7 @@ pip install -r requirements.txt
 ### 3. Configure Database Connections
 
 Edit the `config.py` file to add your PostgreSQL connection details for each database:
-you must make a config.py so the middleware can connect to the database, here is my code for config.py:
+You must make a config.py so the middleware can connect to the database. Here is my code for config.py:
 ```python
 DATABASES = {
     'accurate': {
@@ -169,10 +169,10 @@ DATABASES = {
 ## Usage Example
 
 1. Upload CSV files via the Tkinter GUI:
+   
+![Tkinter GUI Screenshot](Readme/images/UI_first_page.png)
 
-![Tkinter GUI Screenshot](path/to/screenshot.png)
-
-2. Run the payment integration process:
+3. Run the payment integration process:
 Run the integration process to sync payments and update accounts receivable:
 
 ```bash
@@ -182,7 +182,7 @@ python recon.py
 3. Launch the Streamlit Dashboard
 
 Visualize reports and analytics with:
-
+Click "Launch Streamlit Dashboard" Menu
 
 ---
 
