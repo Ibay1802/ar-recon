@@ -176,11 +176,17 @@ python recon.py
 
 2. Upload CSV files via the Tkinter GUI:
 click the "import csv" to upload the CSV file to database. For accurate database it have 3 CSV you can store 1 or all of these 3 csv:
+
    a. students to update list of student
+   
    b. invoice to update list invoice
-   c. accurate_payments to update payments beside xendit and paperID.
-after you upload 1 or all of 3 CSV for accurate click "import accurate data" button.
-but for upload payment to xendit database and paperID database you only 1 CSV so when you choose the CSV it will uploaded itself to xendit or paper I'd database in your postgress.
+  
+   c. accurate_payments to update
+
+payments beside xendit and paperID.
+after you upload 1 or all of 3 CSV for accurate click "run import accurate data" button.
+
+but for upload payment to xendit database and paperID database you only 1 CSV so when you choose the CSV it will uploaded itself to xendit or paper I'd database in your database.
 
 3. Run the payment integration process:
 click the "run paymentintegrator" button to run the middleware sync payments and update accounts receivable
