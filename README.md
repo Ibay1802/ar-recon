@@ -138,29 +138,29 @@ pip install -r requirements.txt
 ### 3. Configure Database Connections
 
 Edit the `config.py` file to add your PostgreSQL connection details for each database:
-
+you must make a config.py so the middleware can connect to the database, here is my code for config.py:
 ```python
 DATABASES = {
     'accurate': {
-        'host': 'localhost',
+        'host': 'localhost', #(i put it on local host in this case)
         'port': 5432,
         'database': 'dummy_accurate',
         'user': 'postgres',
-        'password': '1234'
+        'password': 'xxxx' #(you can put the database password here)
     },
     'xendit': {
-        'host': 'localhost',
+        'host': 'localhost', #(i put it on local host in this case)
         'port': 5432,
         'database': 'dummy_xendit',
         'user': 'postgres',
-        'password': '1234'
+        'password': 'xxxx' #(you can put the database password here)
     },
     'paperid': {
-        'host': 'localhost',
+        'host': 'localhost', #(i put it on local host in this case)
         'port': 5432,
         'database': 'dummy_paperID',
         'user': 'postgres',
-        'password': '1234'
+        'password': 'xxxx' #you can put the database password here
     }
 }
 ```
