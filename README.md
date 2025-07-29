@@ -1,10 +1,11 @@
 # ar-recon
-Account Receivable reconciliation middleware and dashboard
+# Account Receivable Reconciliation Middleware and Dashboard
 
-# Payment Integration and AR Dashboard System
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
 
-This project integrates multiple Database student payments sources (Accurate, Xendit, PaperID) into a centralized Accurate database system and provides a Streamlit dashboard for monitoring accounts receivable and payments. It includes data ingestion scripts, payment reconciliation, and a Tkinter-based backend control panel.
+## Project Summary
 
+This project centralizes student payment data from multiple sources (Accurate, Xendit, PaperID) into one PostgreSQL database and provides a dashboard for monitoring accounts receivable and payments. It automates payment reconciliation and offers visualization tools to improve financial tracking.
 ---
 
 ## Features
@@ -165,26 +166,23 @@ DATABASES = {
 }
 ```
 
-### 4. Upload CSV Data
+## Usage Example
 
-- Use the Tkinter GUI (`recon.py`) to upload CSV files for Accurate, Xendit, and PaperID data.
-- The GUI also allows running the integration process and launching the dashboard.
+1. Upload CSV files via the Tkinter GUI:
 
-### 5. Run Payment Integration Middleware
+![Tkinter GUI Screenshot](path/to/screenshot.png)
 
+2. Run the payment integration process:
 Run the integration process to sync payments and update accounts receivable:
 
 ```bash
 python recon.py
 ```
 
-### 6. Launch the Streamlit Dashboard
+3. Launch the Streamlit Dashboard
 
 Visualize reports and analytics with:
 
-```bash
-streamlit run ar_dashboard2.py
-```
 
 ---
 
@@ -197,8 +195,9 @@ streamlit run ar_dashboard2.py
 
 ---
 ---
+## Contact
 
-If you have any questions or need help setting up, feel free to open an issue or contact the maintainer.
+For questions or support, please contact: ibay.indra@gmail.com
 
 ---
 
